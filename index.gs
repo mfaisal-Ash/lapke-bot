@@ -1,15 +1,30 @@
 //CONFIG
-var BOT_TOKEN = "1234567890:abcdefghijklmnopqrstuvwxyz" //BOT TOKEN ANDA
-var SS_URL = "https://docs.google.com/spreadsheets/d/abcdefghijklmnopq/edit#gid=0" //URL SPREADSHEET
+var BOT_TOKEN = "6247591191:AAGONOvAjYJG5vbMYZOevSmlXyWWjRqnLns" //BOT TOKEN ANDA
+var SS_URL = "https://docs.google.com/spreadsheets/d/1aeAnildGc6aRAoWJ1e_vrv0v2ymBUH6cj5pCkDtSKo4/edit?hl=id#gid=0" //URL SPREADSHEET
 var SHEET_NAME = "laporan" //NAMA SHEET
 var USERS = [
-	173739838,
-	183837728
+	1124120566 
+
 ] //CHAT ID, bisa lebih dari 1
 
 
 //BEGIN
 var SHEET = SpreadsheetApp.openByUrl(SS_URL).getSheetByName(SHEET_NAME);
+var priceList = [
+  { item: "Item 1", price: "Rp. 1.000-10.000" },
+  { item: "Item 2", price: "Rp. 10.000-20.000" },
+  { item: "Item 3", price: "Rp. 20.000-30.000" },
+  { item: "Item 4", price: "Rp. 30.000-50.000" },
+  { item: "Item 5", price: "Rp. 50.000-1.000.000" }
+];
+
+// You can access the prices using the index or iterate over the list
+for (var i = 0; i < priceList.length; i++) {
+  var item = priceList[i].item;
+  var price = priceList[i].price;
+  console.log(item + ": " + price);
+}
+
 
 function doGet(e) {
 	return HtmlService.createHtmlOutput('<h1>OK</h1>')
