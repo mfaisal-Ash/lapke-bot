@@ -40,7 +40,7 @@ ID Date Category Item Price ID reporter Name of reporter
 ![image](https://github.com/sidiq200/lapke-bot/assets/56635757/13da455d-8564-4fd7-a36d-5fa4002d3f75)
 
 
-#* NOTE 
+#NOTE 
 if you want to get an id, you can go through telegram bot 
 see in the picture below 
 ![image](https://github.com/sidiq200/lapke-bot/assets/56635757/6264efdd-fe6e-45f5-80f1-e8fc34856869)
